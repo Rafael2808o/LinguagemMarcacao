@@ -11,10 +11,10 @@
 }
 .input-nome{
     border: none;
-    border-radius:2px;
-    margin-left: 10px;
+    border-radius: 2px;
+    padding: 4px;
     opacity: 70%;
-
+    margin-top: 8px;
 }
 .botao{
     background-color: rgb(181, 181, 181);
@@ -27,14 +27,12 @@
 }
 .login{
     background-color: darkgrey;
-    color: rgb(255, 255, 255);
-            font-size: 35px;
-        border-radius:10px;
-        width: 400px;
-        height: 200px;
-        margin: 0 auto;
-        text-align: center;
-
+    color: white;
+    font-size: 22px;
+    border-radius:10px;
+    width: 400px;
+    margin: 200px auto;
+    padding: 15px;
 }
 .cadastro{
         background-color: darkgrey;
@@ -64,8 +62,13 @@
     background-color: rgb(181, 181, 181);
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 15px;
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
-    margin: 0 auto;
+    margin: 10px 5px 0 0;
+}
+label{
+    display: inline-block;
+    width: 150px;
+    margin-top: 8px;
 }
