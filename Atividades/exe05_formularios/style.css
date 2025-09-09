@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.titulo{
+    background-color: whitesmoke;
+    color: darkgreen;
+    font-size: 65px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.input-nome{
+    border: none;
+    border-radius:2px;
+    margin-left: 10px;
+    opacity: 70%;
+
+}
+.botao{
+    background-color: rgb(181, 181, 181);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin: 0 auto;
+}
+.login{
+    background-color: darkgrey;
+    color: rgb(255, 255, 255);
+            font-size: 35px;
+        border-radius:10px;
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+
+}
+.cadastro{
+        background-color: darkgrey;
+        font-size: 35px;
+    color: rgb(255, 255, 255);
+        border-radius:10px;
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+}
+.produtos{
+            background-color: darkgrey;
+        font-size: 35px;
+    color: rgb(255, 255, 255);
+        border-radius:10px;
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+}
+.imagem{
+    width: 1521px;
+    height: 642px;
+}
+.bota{
+    background-color: rgb(181, 181, 181);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin: 0 auto;
+}
