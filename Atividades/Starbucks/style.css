@@ -1,0 +1,124 @@
+:root {
+    --cor-vermelho-ifood: #ea1d2c;
+    --cor-cinza-texto: #000000;
+    --cor-cinza-borda: #e2e2e2;
+    --cor-fundo: #f7f7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-cinza-texto);
+}
+
+.cabecalho {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--cor-cinza-borda);
+}
+
+.logo {
+    height: 8vh;
+}
+
+.container {
+    max-width: 1700px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.navegacao {
+    display: flex;
+    gap: 20px;
+}
+
+.item {
+    text-decoration: none;
+    color: var(--cor-cinza-texto);
+    font-weight: 600;
+    padding: 8px 0;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.item:hover,
+.item:focus {
+    color: green;
+    border-bottom-color: green;
+}
+
+.cabecalho-direita {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.localizacao {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 5px;
+}
+
+.texto-local {
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    background: transparent;
+    outline: none;
+}
+
+.acao {
+    display: flex;
+    gap: 14px;
+}
+
+.botao-entrar {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cabecalho-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.botao-entrar:hover {
+    background-color: black;
+    color: white;
+}
+
+.criar-participe {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.criar-participe:hover {
+    background-color: white;
+    color: black;
+}
+
+.loc {
+    height: 3vh;
+}

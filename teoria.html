@@ -156,6 +156,60 @@
                 <label>Senha</label>
                   <input class="input-nome" placeholder="Digite uma senha" type="password"><br>
                   <input href="#" type="button" class="botao" value="cadastrar">
+                  <br>
+                  <!-- Incluindo checkbox(opções) -->
+                   <input type="checkbox" class="checar"> Eu tenho uma bicicleta <br>
+                   <input type="checkbox" class="checar"> Eu tenha uma moto <br>
+                   <input type="checkbox" class="checar"> Eu tenho um carro <br>
+                   <!-- Incluir input de cor -->
+                    <input type="color" value="#000000">
+
+                    <!-- Inserindo data -->
+                     <br><label for=""> Data de nascimento </label>
+                     <input type="data">
+                     <input type="datetime-local">
+
+                     <!-- Input do tipe email -->
+                      <input type="email" placeholder="Digite seu email" class="email">
+
+                      <!-- Input de selção -->
+                       <select>
+                        <!-- O atriburo value, enviara o valor do item selecionado -->
+                         <!-- para o servidor -->
+                        <option value="">Selecione a escolaridade</option>
+                        <option value="primeiro medio">1º Médio</option>
+                        <option value="segundo medio">2º Médio</option>
+                        <option value="terceio medio">3º Médio</option>
+
+                       </select>
+                       <select class="selecao">
+                        <option value="" selected>Selecione a escolaridade</option>
+                        <option value="primeiro medio">1º Médio</option>
+                        <option value="segundo medio">2º Médio</option>
+                        <option value="terceio medio">3º Médio</option>
+
+                       </select>
+                       <!-- Input radio button -->
+                        <p>Radio Button</p>
+                        <input type="radio" name="tamanho"> Pequeno
+                        <input type="radio" name="tamanho"> Medio
+                        <input type="radio" name="tamanho"> Grande
+                        <input type="radio" name="tamanho"> Outro
+                        <br>
+                        <p>Radio Button</p>
+                        <input type="radio" name="tamanho" class="radio"> Pequeno
+                        <input type="radio" name="tamanho" class="radio"> Medio
+                        <input type="radio" name="tamanho" class="radio"> Grande
+                        <input type="radio" name="tamanho" class="radio"> Outro
+
+                        <!-- Criar um grupo de componentes -->
+                         <fieldset>
+                            <legend>Descrição</legend>
+                            <textarea name="" id=""></textarea>
+                         </fieldset>
+
+                         <input type="submit" value="Enviar">
+                         <input type="reset" value="Limpar">
             </form>
 </body>
 </html>

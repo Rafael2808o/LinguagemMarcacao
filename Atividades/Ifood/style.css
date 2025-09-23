@@ -1,0 +1,88 @@
+:root{
+    --cor-vermelho-ifood: #ea1d2c;
+    --cor-cinza-texto: #575757;
+    --cor-cinza-borda: #e2e2e2;
+    --cor-fundo: #f7f7f7;
+}
+/* Zerando as propriedades do documento */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* Apliquei em todo o documento fonte, cor e cor fundo */
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-cinza-texto);
+}
+.cabecalho{
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--cor-cinza-borda);
+}
+.logo{
+    height: 5vh;
+}
+.container{
+    /* Propriedade define a largura maxima que ele pode atingir */
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navegacao{
+    display: flex;
+    gap: 20px;
+}
+.item{
+    /* Remover decoracao da tag a */
+    text-decoration: none;
+    color: var(--cor-cinza-texto);
+    /* Aplicando negrito */
+    font-weight: 600;
+    padding: 8px 0;
+    border-bottom: 3px solid transparent;
+}
+.item:focus,
+.item:hover{
+    color: var(--cor-vermelho-ifood);
+    border-bottom-color: var(--cor-vermelho-ifood);
+}
+.buscar{
+    padding: 10px;
+    border: 1px solid var(--cor-cinza-borda);
+    border-radius: 8px;
+    width: 9rem;
+}
+.localizacao{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.texto-local{
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+.acao{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.criar-conta{
+    text-decoration: none;
+    color: var(--cor-vermelho-ifood);
+    font-weight: 600;
+}
+.botao-entrar{
+    background-color: var(--cor-vermelho-ifood);
+    color: var(--cor-fundo);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}

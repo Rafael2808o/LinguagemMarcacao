@@ -72,3 +72,61 @@ label{
     width: 150px;
     margin-top: 8px;
 }
+.cadastrar{
+    background-color: rgb(172, 221, 167);
+    color: white;
+    font-size: 22px;
+    border-radius:10px;
+    width: 400px;
+    margin: 200px auto;
+    padding: 15px;
+    border: 2px rgb(0, 0, 0);
+    border-color: black;
+}
+.email{
+    border-radius: 2px;
+    padding: 4px;
+    opacity: 70%;
+    margin-top: 8px;
+    padding: 5px;
+    border: 2px solid #fff;
+}
+.cancelar {
+    background-color: #b33;   /* vermelho suave */
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 5px 0 0;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cancelar:hover {
+    background-color: #922;   /* efeito hover */
+}
+
+.cadastrar-botao {
+    background-color: darkgreen;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cadastrar-botao:hover {
+    background-color: green;
+}
+.cads{
+ color: black;
+ padding: 10px;
+ margin: auto auto auto auto;
+ text-align: center;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: larger;
+}

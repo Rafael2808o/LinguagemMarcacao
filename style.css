@@ -66,3 +66,53 @@ p{
     text-shadow: 5px 2px 5px rgba(212, 14, 57, 0.9);
     margin: 0 auto;
 }
+
+.checar{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    /* Modifique o tipo do cursos */
+    cursor: pointer;
+    /* Limpar configurações aparencia */
+    appearance: none;
+    background-color: #fff;
+    border: 2px dashed #9000c9;
+    border-radius: 5px;
+}
+.checar:checked{
+    background-color: #9000c9;
+}
+
+.email{
+    width: 300px;
+    padding: 5px;
+    margin-left: 5px;
+    border: 2px solid #fff;
+}
+
+.selecao{
+    appearance: none;
+    width: 300px;
+    padding: 4px;
+    font-size: 16px;
+    color: #4a3f3f;
+    background-color: aliceblue;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* Sombra no input */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+.radio{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #c90000;
+    border-radius: 50%;
+}
+
+/* Pseudoclasse quando se */
+.radio:checked{
+
+    background-color: #c90000;
+        border-color: #d400ff;
+}
