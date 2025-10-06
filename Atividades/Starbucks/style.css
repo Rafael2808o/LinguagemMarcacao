@@ -177,3 +177,59 @@ body {
     align-items: center;
     background-color: rgb(212, 233, 226);
 }
+.rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rodape-coluna {
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape-coluna h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.rodape-coluna ul {
+    list-style: none;
+}
+
+.rodape-coluna ul li {
+    margin-bottom: 10px;
+}
+
+.rodape-coluna ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.rodape-coluna ul li a:hover {
+    color: #fff;
+}
+
+.rodape-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.rodape-bottom p {
+    font-size: 14px;
+    color: #ccc;
+}

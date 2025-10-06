@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ifood - Delivery de comida</title>
+    <title>iFood - Delivery de Comida</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +12,7 @@
 <body>
     <header class="cabecalho">
         <div class="container">
-            <img src="https://logopng.com.br/logos/ifood-43.png"  class="logo">
-            
+            <img src="https://logopng.com.br/logos/ifood-43.png" alt="iFood Logo" class="logo">
             <nav class="navegacao">
                 <a href="#" class="item">Restaurante</a>
                 <a href="#" class="item">Mercado</a>
@@ -21,24 +20,32 @@
                 <a href="#" class="item">Farmácia</a>
                 <a href="#" class="item">Pet-shop</a>
             </nav>
-
-            <div>
+            <div class="busca-container">
                 <input type="text" placeholder="Busque por item ou loja" class="buscar">
                 <div class="localizacao">
                     <span>📍</span>
                     <input type="text" value="Andradina-SP" class="texto-local">
                 </div>
             </div>
-
             <div class="acao">
-                <a href="" class="criar-conta">Criar Conta</a>
+                <a href="#" class="criar-conta">Criar Conta</a>
                 <button class="botao-entrar">Entrar</button>
             </div>
         </div>
     </header>
     <main>
-        <section class="cards-container">
+        <section class="banner">
+            <div class="banner-container">
+                <img src="https://images-americanas.b2w.io/landingpage/banners/ifood-banner.jpg" alt="Promotional Banner" class="banner-img">
+                <div class="banner-text">
+                    <h2>Peça sua comida favorita no iFood!</h2>
+                    <p>Descontos exclusivos e entrega rápida para você.</p>
+                    <button class="banner-btn">Peça Agora</button>
+                </div>
+            </div>
+        </section>
 
+        <section class="cards-container">
             <div class="card">
                 <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Restaurantes" class="img">
                 <p>Restaurantes</p>
@@ -78,44 +85,77 @@
                 <img src="/Img/comprs.png" alt="Shopping" class="img">
                 <p>Shopping</p>
             </div>
-
         </section>
-            <section class="famosos">
-        <h2>🍴 Restaurantes Famosos</h2>
-        <div class="famosos-container">
 
-            <div class="famoso-card">
-                <img src="" alt="McDonald's">
-                <p>McDonald's</p>
+        <section class="famosos">
+            <h2>🍴 Restaurantes Famosos</h2>
+            <div class="famosos-container">
+                <div class="famoso-card">
+                    <img src="https://logo.clearbit.com/mcdonalds.com" alt="McDonald's">
+                    <p>McDonald's</p>
+                </div>
+                <div class="famoso-card">
+                    <img src="https://logo.clearbit.com/burgerking.com" alt="Burger King">
+                    <p>Burger King</p>
+                </div>
+                <div class="famoso-card">
+                    <img src="https://logo.clearbit.com/kfc.com" alt="KFC">
+                    <p>KFC</p>
+                </div>
+                <div class="famoso-card">
+                    <img src="https://logo.clearbit.com/pizzahut.com" alt="Pizza Hut">
+                    <p>Pizza Hut</p>
+                </div>
+                <div class="famoso-card">
+                    <img src="https://logo.clearbit.com/subway.com" alt="Subway">
+                    <p>Subway</p>
+                </div>
+                <div class="famoso-card">
+                    <img src="https://logo.clearbit.com/dominos.com" alt="Domino's">
+                    <p>Domino's</p>
+                </div>
             </div>
-
-            <div class="famoso-card">
-                <img src="" alt="Burger King">
-                <p>Burger King</p>
-            </div>
-
-            <div class="famoso-card">
-                <img src="" alt="KFC">
-                <p>KFC</p>
-            </div>
-
-            <div class="famoso-card">
-                <img src="" alt="Pizza Hut">
-                <p>Pizza Hut</p>
-            </div>
-
-            <div class="famoso-card">
-                <img src="" alt="Subway">
-                <p>Subway</p>
-            </div>
-
-            <div class="famoso-card">
-                <img src="" alt="Domino's">
-                <p>Domino's</p>
-            </div>
-
-        </div>
-    </section>
+        </section>
     </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-coluna">
+                <h3>iFood</h3>
+                <ul>
+                    <li><a href="#">Sobre o iFood</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </ul>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Para Você</h3>
+                <ul>
+                    <li><a href="#">Cadastro de Clientes</a></li>
+                    <li><a href="#">Clube iFood</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                </ul>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Parceiros</h3>
+                <ul>
+                    <li><a href="#">Cadastro de Restaurantes</a></li>
+                    <li><a href="#">Cadastro de Entregadores</a></li>
+                    <li><a href="#">iFood Shop</a></li>
+                </ul>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape-bottom">
+            <p>&copy; 2025 iFood - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
