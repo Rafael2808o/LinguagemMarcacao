@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camaleão</title>
+    <style>
+        html,body{height:100%;}
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .wrap { display:flex; align-items:center; justify-content:center; }
+
+        .camaleao{
+            width: 160px;
+            height: 160px;
+            border-radius: 12px;
+            transition: background-color 0.25s ease, transform 0.25s ease;
+            position: relative; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .camaleao::after{
+            content: "Celular (padrão)";
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.28);
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .camaleao { background-color: #4CAF50; }
+
+        @media (max-width: 160px) {
+            .camaleao { background-color: #0b63ff; }
+            .camaleao::after { content: "Celular"; background: rgba(255,255,255,0.12); color: #fff; }
+        }
+
+        @media (min-width: 601px) and (max-width: 991px) {
+            .camaleao { background-color: #ffd200; }
+            .camaleao::after { content: "Tablet"; background: rgba(255,255,255,0.8); color: #3a2f00; }
+        }
+
+        @media (min-width: 992px) {
+            .camaleao { background-color: #6b3ea6; }
+            .camaleao::after { content: "Notebook"; background: rgba(255,255,255,0.08); color: #fff; }
+        }
+
+        @media (min-width: 1200px) {
+            .camaleao::after { content: "Tela grande"; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="camaleao"></div>
+    </div>
+</body>
+</html>

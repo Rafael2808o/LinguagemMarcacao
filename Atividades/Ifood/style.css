@@ -5,7 +5,6 @@
     --cor-fundo: #f7f7f7;
 }
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ body {
     color: var(--cor-cinza-texto);
 }
 
-/* Cabeçalho */
 .cabecalho {
     background-color: #fff;
     padding: 15px 0;
@@ -315,4 +313,156 @@ body {
 .rodape-bottom p {
     font-size: 14px;
     color: #ccc;
+}
+/* Fundo do modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+    opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+/* Caixa do modal */
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Cabeçalho */
+.modal-header {
+  background: #ff0000;
+  color: #fff;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.close-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  color: #ccc;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff0000;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #7d1010;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .navegacao {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cards-container {
+        justify-content: flex-start;
+    }
+
+    .famosos-container {
+        justify-content: center;
+    }
+
+    .rodape-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-coluna {
+        min-width: 100%;
+    }
 }
