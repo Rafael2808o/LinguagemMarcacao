@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Sobre GRID Layout</title>
+    <!-- importar tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="container mx-auto p-4">
+    <section>
+        <!-- Dar espaços entre as seções -->
+        <div class="space-y-12">
+            <!-- Grid Básico -->
+            <h2 class="text-4xl font-bold mb-4">Grid Básico</h2>
+
+            <div class="grid grid-cols-12 text-2xl text-white text-center gap-6">
+                <div class="bg-blue-500 p-2">1</div>
+                <div class="bg-blue-600 p-2">2</div>
+                <div class="bg-blue-700 p-2">3</div>
+                <div class="bg-blue-800 p-2">4</div>
+                <div class="bg-blue-900 p-2">5</div>
+                <div class="bg-green-500 p-2">6</div>
+                <div class="bg-green-600 p-2">7</div>
+                <div class="bg-green-700 p-2">8</div>
+                <div class="bg-green-800 p-2">9</div>
+                <div class="bg-green-900 p-2">10</div>
+                <div class="bg-purple-500 p-2">11</div>
+                <div class="bg-purple-800 p-2">12</div>
+            </div>
+            <div class="grid grid-cols-12 gap-2 mt-4 text-2xl text-white text-center">
+                <div class="col-span-1 bg-blue-500 p-2">1</div>
+                <div class="col-span-2 bg-blue-600 p-2">2</div>
+                <div class="col-span-4 bg-blue-700 p-2">3</div>
+                <div class="col-span-5 bg-blue-800 p-2">4</div>
+            </div>
+    </section>
+
+    <section>
+        <h2 class="text-4xl font-bold mb-4">Grid Responsivo</h2>
+        <div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-6 text-2xl text-white text-center">
+                <div class="bg-blue-500 p-2">1</div>
+                <div class="bg-blue-600 p-2">2</div>
+                <div class="bg-blue-700 p-2">3</div>
+                <div class="bg-blue-800 p-2">4</div>
+                <div class="bg-blue-900 p-2">5</div>
+                <div class="bg-green-500 p-2">6</div>
+                <div class="bg-green-600 p-2">7</div>
+                <div class="bg-green-700 p-2">8</div>
+                <div class="bg-green-800 p-2">9</div>
+                <div class="bg-green-900 p-2">10</div>
+                <div class="bg-purple-500 p-2">11</div>
+                <div class="bg-purple-800 p-2">12</div>
+            </div>
+        </div>
+    </section>
+    <section>
+    <h2 class="text-4xl font-bold mb-4">Quebra de Linha</h2>
+    <div class="grid grid-cols-4 text-2xl text-center">
+        <div class="bg-blue-700">1</div>
+        <div class="bg-purple-700">2</div>
+        <div class="row-start-2 col-start-4 bg-green-700">3</div>
+        <!-- row-start posiciona o elemento na linha q vc determinar -->
+        <!-- col-start posiciona o elemento na coluna q vc determinar -->
+    </div>
+    </section>
+
+        <section>
+    <h2 class="text-4xl font-bold mb-4">Ordem com grid</h2>
+    <div class="grid grid-cols-3 text-2xl text-center">
+        <div class="bg-blue-700 order-3">1</div>
+        <div class="bg-purple-700 order-2">2</div>
+        <div class="bg-green-700 order-1">3</div>
+    </div>
+    </section>
+
+    <section>
+    <h2 class="text-4xl font-bold mb-4">Tamanho e posição</h2>
+    <div class="grid grid-cols-12 text-2xl text-center">
+        <div class="bg-blue-700 col-span-1 col-start-12">1</div>
+        <div class="bg-purple-700 col-span-4 col-start-4">2</div>
+        <div class="bg-green-700 col-span-6 col-start-2">3</div>
+    </div>
+    </section>
+
+        <section>
+    <h2 class="text-4xl font-bold mb-4">Alinhamento Grids</h2>
+    <div class="grid grid-cols-3 h-[300px] bg-gray-300 text-2xl text-center">
+        <div class="bg-blue-700 self-end">1 - Fim</div>
+        <div class="bg-purple-700 self-center">2 - Centro</div>
+        <div class="bg-green-700 self-start">3 - Começo</div>
+    </div>
+    </section>
+    </div>
+
+</body>
+
+</html>
