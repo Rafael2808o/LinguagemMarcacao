@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quitanda On-Line</title>
+    <link rel="shortcut icon" href="./img/image copy 4.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-red-600 text-white border-b-4 border-red-700 shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto flex items-center justify-between px-8 py-4 flex-wrap">
+            <a href="#principal" class="text-xl font-bold">Quitanda On-Line</a>
+
+            <div
+                class="w-full sm:flex-col lg:flex lg:flex-row lg:w-auto lg:items-center lg:justify-between hidden gap-2">
+                <ul class="flex flex-col lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-4 mb-4 lg:mb-0">
+                    <li><a href="#principal"
+                            class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Principal</a></li>
+                    <li><a href="#produtos" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Produtos</a>
+                    </li>
+                    <li><a href="#sobre" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Sobre Nós</a>
+                    </li>
+                    <li><a href="#contato" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Contato</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-4 mb-4 lg:mb-0">
+                    <li><a href="#cadastrar"
+                            class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Cadastrar</a></li>
+                    <li><a href="#entrar" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">Entrar</a>
+                    </li>
+                    <li>
+                        <a href="#carrinho" class="hover:bg-red-700 px-3 py-2 rounded-md transition-colors">
+                            <svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header id="principal" class="text-center my-12 bg-red-100 py-16">
+            <h1 class="text-5xl font-extrabold text-red-700 mb-4">Bem-vindo à Quitanda On-Line</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">Sua melhor escolha para produtos frescos, orgânicos
+                e de alta qualidade, entregues diretamente na sua porta. Explore nossa variedade de frutas, verduras e
+                muito mais!</p>
+            <a href="#produtos"
+                class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition duration-300">Ver
+                Produtos</a>
+        </header>
+
+        <section id="produtos" class="py-12 px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Nossos Produtos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./img/frutas-coloridas-saborosas-frescas-maduras-e-suculentas-numa-secretaria-branca.png"
+                        alt="Frutas" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Frutas Frescas</h3>
+                    <p class="text-gray-600 mb-4">Maçãs, bananas, laranjas e mais, colhidas no dia.</p>
+                    <a href="#" class="text-red-600 hover:underline">Comprar agora</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./img/image copy 5.png" alt="Verduras" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Verduras Orgânicas</h3>
+                    <p class="text-gray-600 mb-4">Alface, espinafre, cenouras e vegetais sem agrotóxicos.</p>
+                    <a href="#" class="text-red-600 hover:underline">Comprar agora</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./img/tempero-em-po-convertido-de-jpg.png" alt="Outros"
+                        class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Outros Produtos</h3>
+                    <p class="text-gray-600 mb-4">Ervas, temperos e itens essenciais para sua cozinha.</p>
+                    <a href="#" class="text-red-600 hover:underline">Comprar agora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-12 px-6 bg-gray-200">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Sobre Nós</h2>
+            <p class="text-lg text-gray-600 max-w-4xl mx-auto">Somos uma quitanda online dedicada a fornecer produtos
+                frescos e de qualidade diretamente dos produtores locais. Nossa missão é promover uma alimentação
+                saudável e sustentável.</p>
+        </section>
+
+    </main>
+
+    <footer class="bg-red-600 text-white py-6 px-6 text-center">
+        <p>&copy; 2025 Quitanda On-Line. Todos os direitos reservados.</p>
+        <div class="mt-2">
+            <a href="#" class="mx-2 hover:underline">Política de Privacidade</a>
+            <a href="#" class="mx-2 hover:underline">Termos de Uso</a>
+        </div>
+    </footer>
+</body>
+
+</html>
