@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-lg shadow-x1 max-w-md w-full">
+        <h1 class="text-3x1 font-bold text-gray-800 mb-6 text-center">Teoria JavaScript</h1>
+        <div class="space-y-6">
+
+        <div class="flex flex-col sm:flex-row gap-4">
+            <button onclick="Somando()" class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200 ease-in-xout">Somando</button>
+        </div>
+<body>
+    
+    <script>
+        function Somando() {
+        var numero1 = parseFloat(prompt("Digite o primeiro número:"));
+        var numero2 = parseFloat(prompt("Digite o segundo número:"));
+        var soma = numero1 + numero2;
+            alert("A soma de " + numero1 + " e " + numero2 + " é: " + soma);}
+        </script>
+</body>
+</html>
