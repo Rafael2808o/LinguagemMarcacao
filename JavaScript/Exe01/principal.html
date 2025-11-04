@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doçuras da Vovó</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body class="font-poppins bg-white text-black">
+   <header class="bg-white py-3 shadow-md fixed top-0 z-50 w-full">
+    <div class="max-w-7xl px-5 flex justify-between items-center mx-auto">
+        <div class="flex items-center gap-2">
+            <img src="/Quintanda Online/img/vovovovoovov.jpg" class="h-8" alt="Logo">
+            <span class="text-pink-600 font-bold text-lg">Doçuras da Vovó</span>
+        </div>
+        
+        <nav class="hidden md:flex gap-4 text-gray-600 text-sm items-center">
+            <a href="#" class="no-underline hover:text-pink-600">Principal</a>
+            <a href="#" class="no-underline hover:text-pink-600">★ Favoritos</a>
+            <a href="#" class="no-underline hover:text-pink-600">≡ Promoções</a>
+            <div class="relative">
+                <button id="mobile-account-button" class="flex items-center gap-2 no-underline hover:text-pink-600 group">
+                    <img src="/Img/vecteezy_user-icon-on-transparent-background_19879186.png" class="w-8 group-hover:hidden transition duration-200">
+  <img src="/Img/rosia.png" class="w-8 hidden group-hover:block transition duration-200">Minha Conta ▼</button>
+                <div id="account-dropdown" class="absolute right-0 z-10 mt-2 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Meus Pedidos</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Configurações</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-t-2">Sair</a>
+                </div>
+            </div>
+        </nav>
+
+        <button id="hamburger-button" class="md:hidden text-gray-600">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <div class="px-5 py-4 flex flex-col gap-4 text-gray-600 text-sm">
+            <a href="#" class="no-underline hover:text-pink-600">Principal</a>
+            <a href="#" class="no-underline hover:text-pink-600">★ Favoritos</a>
+            <a href="#" class="no-underline hover:text-pink-600">≡ Promoções</a>
+            <div>
+                <button id="mobile-account-button" class="flex items-center gap-2 no-underline hover: hover:text-pink-600">
+                    <img src="/Img/vecteezy_user-icon-on-transparent-background_19879186.png" alt="Ícone de usuário" class="w-8">
+                    Minha Conta ▼
+                </button>
+                <div id="mobile-account-dropdown" class="hidden flex flex-col gap-2 mt-2 text-sm">
+                    <a href="#" class="hover:text-pink-600">Meus Pedidos</a>
+                    <a href="#" class="hover:text-pink-600">Configurações</a>
+                    <a href="#" class="hover:text-pink-600">Sair</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main class="container mx-auto mt-8 ">
+        <section class="relative w-full max-w-4xl mx-auto rounded-lg shadow-lg">
+            <div id="carrossel-container" class="overflow-hidden rounded-lg ">
+                <div id="carrossel-slides" class="flex transition-transform duration-500 ease-in-out">
+                    <div style="background-image: url(/Img/docinhos-gourmet-mais-vendidos10-1-1024x576.webp);" class="slide-carrossel min-w-full h-80 text-white flex items-center justify-center">
+                        <h2 class="text-4xl font-bold">Nossos pãos de mel</h2>
+                    </div>
+                    <div style="background-image: url(/Img/doces-ao-redor-do-mundo-macarons.webp);" class="slide-carrossel min-w-full h-80 bg-green-500 text-white flex items-center justify-center">
+                        <h2 class="text-4xl font-bold">Nossos Macarons Cremosos</h2>
+                    </div>
+                    <div style="background-image: url(/Img/mousse-de-maracuja-com-chocolate-branco-e-doce-de-leite-.avif);" class="slide-carrossel min-w-full h-80 bg-yellow-500 text-white flex items-center justify-center">
+                        <h2 class="text-4xl font-bold">Nosso Mousse de Maracujá</h2>
+                    </div>
+                </div>
+
+            </div>
+            <button id="btn-anterior" class="absolute top-1/2 left-4 bg-white/50 hover:bg-white p-2 rounded-full shadow -translate-y-1/2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="btn-proximo" class="absolute top-1/2 right-4 bg-white/50 hover:bg-white p-2 rounded-full shadow -translate-y-1/2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
+        </section>
+    </main>
+<section class="max-w-5xl mx-auto py-8">
+    <h2 class="text-3xl font-bold text-center">Recomendados</h2>
+    <p class="text-center text-gray-600 mb-8">Aproveite nossos melhores produtos</p>
+    
+        <div class="bg-white rounded-lg shadow-md overflow-hidden flex mb-8">
+            <div class="p-8 w-1/2 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-pink-500 mb-4">Tiramisu</h2>
+                <p class="text-gray-600 mb-6">O tiramisù é uma sobremesa italiana clássica feita com camadas de biscoitos tipo "champanhe" (savoiardi).</p>
+                <button class="open-modal-btn bg-pink-500 text-white px-6 py-2 rounded-md w-fit">Saiba mais</button>
+            </div>
+            <div class="w-1/2">
+                <img src="/Quintanda Online/img/Tiramisù.jpg" alt="Tiramisu" class="object-cover w-full h-full">
+            </div>
+        </div>
+    
+    <div class="flex gap-4">
+
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden flex">
+            <div class="w-1/2">
+                <img src="/Quintanda Online/img/bolode.jpeg" alt="Yogurt Parfait" class="object-cover w-full h-64">
+            </div>
+            <div class="p-8 w-1/2 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-pink-500 mb-4">Bolo de Chocolate</h2>
+                <p class="text-gray-600 mb-6">Bolo de Chocolate Úmido: Massa espetacular de chocolate com cobertura cremosa. Um sucesso de vendas, fofinho e cheio de sabor.</p>
+                <button class="open-modal-btn bg-pink-500 text-white px-6 py-2 rounded-md w-fit">Saiba mais</button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-gray-100 py-8">
+    <div class="max-w-5xl mx-auto px-5 flex justify-between">
+        <div>
+            <h3 class="text-pink-600 font-bold mb-4">Contato</h3>
+            <ul class="list-none text-gray-600 text-sm">
+                <li class="mb-2">● Borbinha, 1.2 anos</li>
+                <li class="mb-2">☎ (17) 2803-2008</li>
+                <li>✉ mariana@borba.com</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-pink-600 font-bold mb-4">Siga-nos</h3>
+            <div class="flex gap-4">
+                <img src="/Quintanda Online/img/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand.png" class="h-6 w-6 rounded-full bg-gray-300">
+                <img src="/Quintanda Online/img/150898076_10464257.png" class="h-6 w-6 rounded-full bg-gray-300">
+                <img src="/Quintanda Online/img/150897972_10464408.png" class="h-6 w-6 rounded-full bg-gray-300">
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-8 text-gray-500 text-sm border-t border-gray-300 pt-4 max-w-5xl mx-auto">
+        © 2024 - Doçuras da Vovó. Todos os direitos reservados.
+    </div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando cor de fundo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4 flex-col">
+
+    <h1> Alterando cor de fundo</h1>
+    <button class="mt-3 w-full bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-600 transition duration-200 ease-in-out" onclick="mudaCorVermelho()">Vermelho</button>
+    <button class="mt-3 w-full bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-600 transition duration-200 ease-in-out" onclick="mudaCorAzul()">Azul</button>
+    <button class="mt-3 w-full bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-600 transition duration-200 ease-in-out" onclick="mudaCorRoxo()">Roxo</button>
+    <script>
+        // acesso o documento e altero o body da minha pagina
+        function mudaCorVermelho() {
+        document.body.style.background = "red";}
+        function mudaCorAzul() {
+        document.body.style.background = "blue";}
+        function mudaCorRoxo() {
+        document.body.style.background = "purple";}
+    </script>
+</body>
+</html>

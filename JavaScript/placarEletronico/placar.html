@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar Eletronico</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body class="bg-gray-800 text-white flex flex-col items-center justify-center p-4">
+    <header class="mb-8 text-center"></header>
+    <h1 class="text-4xl md:text-5xl font-bold text-purple-100">Placar Eletronico</h1>
+    
+    <div class="flex flex-col md:flex-row gap-8 items-start">
+        <section class="bg-gray-800 text-white flex rounded-lg items-center justify-center p-4 shadow-2xl space-x-16">
+            <div class="text-center flex flex-col items-center">
+                <p class="text-2xl font-semibold mb-2">Casa</p>
+                <p id="pt1" class="text-6xl font-bold text-yellow-400 mb-4">0</p>
+                <div>
+                    <button onclick="ponto1()" class="bg-blue-500 text-white rounded-lg p-3">Gol</button>
+                    <button onclick="men()" class="bg-red-500 text-white rounded-lg p-1"><strong>-</strong></button>
+                </div>
+            </div>
+            <div class="text-center flex flex-col items-center">
+                <p class="text-2xl font-semibold mb-2">Visitante</p>
+                <p id="pt2" class="text-6xl font-bold text-yellow-400 mb-4">0</p>
+                <div>
+                    <button onclick="ponto2()" class="bg-blue-500 text-white rounded-lg p-3">Gol</button>
+                    <button onclick="men1()" class="bg-red-500 text-white rounded-lg p-1"><strong>-</strong></button>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-800 text-white flex rounded-lg items-center justify-center p-4 shadow-2xl space-x-16">
+            <div class="text-center flex flex-col items-center">
+                <p class="text-2xl font-semibold mb-2">Basquete - Casa</p>
+                <p id="bpt1" class="text-5xl font-bold text-yellow-400 mb-4">0</p>
+                <div class="flex gap-2 items-center">
+                    <button onclick="basAddCasa(1)" class="bg-blue-500 text-white rounded-lg p-2">+1</button>
+                    <button onclick="basAddCasa(2)" class="bg-blue-500 text-white rounded-lg p-2">+2</button>
+                    <button onclick="basAddCasa(3)" class="bg-blue-500 text-white rounded-lg p-2">+3</button>
+                    <button onclick="basMen1()" class="bg-red-500 text-white rounded-lg p-1"><strong>-</strong></button>
+                </div>
+            </div>
+            <div class="text-center flex flex-col items-center">
+                <p class="text-2xl font-semibold mb-2">Basquete - Visitante</p>
+                <p id="bpt2" class="text-5xl font-bold text-yellow-400 mb-4">0</p>
+                <div class="flex gap-2 items-center">
+                    <button onclick="basAddVisitante(1)" class="bg-blue-500 text-white rounded-lg p-2">+1</button>
+                    <button onclick="basAddVisitante(2)" class="bg-blue-500 text-white rounded-lg p-2">+2</button>
+                    <button onclick="basAddVisitante(3)" class="bg-blue-500 text-white rounded-lg p-2">+3</button>
+                    <button onclick="basMen2()" class="bg-red-500 text-white rounded-lg p-1"><strong>-</strong></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="mt-6 flex gap-4">
+        <button onclick="zerar()" class="bg-red-500 text-white rounded-lg p-3">Reset Futebol</button>
+        <button onclick="zerarBasquete()" class="bg-red-700 text-white rounded-lg p-3">Reset Basquete</button>
+    </div>
+
+    
+</body>
+</html>
